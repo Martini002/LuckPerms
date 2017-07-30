@@ -1,6 +1,7 @@
 # LuckPerms Language File
 # Locale: es_ES (Spanish)
 # Author: Jose Chavez (Twitter: @JoCHav3z)
+# Corrections: Wrobi (Twitter: @Martini002)
 
 prefix: "&7&l[&b&lL&3&lP&7&l] &c"
 log-info: "&7&l[&bL&3P&7&l] &3{0}"
@@ -231,22 +232,22 @@ unset-meta-temp-server-world-success: "&aDesestablecer temporalmente el valor me
 bulk-change-type-error: "Tipo no válido. Se estaba esperando 'server' o 'world'."
 bulk-change-success: "&aEl cambio masivo fue aplicado correctamente. {0} los registros fueron cambiados."
 user-info-general: >
-  {PREFIX}&b&l> &bUser Info: &f{0}\n
+  {PREFIX}&b&l> &bInfo del Usuario: &f{0}\n
   {PREFIX}&f- &3UUID: &f{1}\n
-  {PREFIX}&f- &3Status: {2}\n
-  {PREFIX}&f- &3Primary Group: &f{3}\n
-  {PREFIX}&f- &aCounts:\n
-  {PREFIX}&f-    &3Permissions: &a{4}\n
-  {PREFIX}&f-    &3Temporary Permissions: &a{5}\n
-  {PREFIX}&f-    &3Prefixes: &a{6}\n
-  {PREFIX}&f-    &3Suffixes: &a{7}\n
+  {PREFIX}&f- &3Estado: {2}\n
+  {PREFIX}&f- &3Grupo primario: &f{3}\n
+  {PREFIX}&f- &aCuentas:\n
+  {PREFIX}&f-    &3Permisos: &a{4}\n
+  {PREFIX}&f-    &3Permisos Temporales: &a{5}\n
+  {PREFIX}&f-    &3Prefijos: &a{6}\n
+  {PREFIX}&f-    &3Sufijos: &a{7}\n
   {PREFIX}&f-    &3Meta: &a{8}
 user-info-data: >
-  {PREFIX}&f- &aCached Data:\n
-  {PREFIX}&f-    &3Is Loaded: {0}\n
-  {PREFIX}&f-    &3Current Contexts: {1}\n
-  {PREFIX}&f-    &3Current Prefix: {2}\n
-  {PREFIX}&f-    &3Current Suffix: {3}
+  {PREFIX}&f- &aData cacheada:\n
+  {PREFIX}&f-    &3Esta cargado: {0}\n
+  {PREFIX}&f-    &3Contextos actuales: {1}\n
+  {PREFIX}&f-    &3Prefijo actual: {2}\n
+  {PREFIX}&f-    &3Sufijo actual: {3}
 info-parent-header: "&f- &aGrupos Parentales:"
 info-temp-parent-header: "&f- &aGrupos Temporalmente Parentales:"
 user-getuuid: "&bEl UUID de &b{0}&b es &b{1}&b."
@@ -264,32 +265,32 @@ user-promote-success-server: "&aPromover al usuario a lo largo de la pista &b{0}
 user-promote-success-server-world: "&aPromover al usuario a lo largo de la pista &b{0}&a desde &b{1}&a a &b{2}&a en el servidor &b{3}&a, mundo &b{4}&a."
 user-promote-error-endoftrack: "El final de la pista &4{0}&c fue alcanzado. No se puede promover al usuario."
 user-promote-error-malformed: >
-  {PREFIX}The next group on the track, {0}, no longer exists. Unable to promote user.\n
-  {PREFIX}Either create the group, or remove it from the track and try again.
+  {PREFIX}El siguiente grupo en el track, {0}, no existe. No se puede promover al usuario.\n
+  {PREFIX}Puede crear el grupo o eliminarlo del track e intentarlo de nuevo.
 user-demote-success: "&aDegradando al usuario a lo largo de la pista &b{0}&a desde &b{1}&a a &b{2}&a."
 user-demote-success-server: "&aDegradando al usuario a lo largo de la pista &b{0}&a desde &b{1}&a a &b{2}&a en el servidor &b{3}&a."
 user-demote-success-server-world: "&aDegradando al usuario a lo largo de la pista &b{0}&a desde &b{1}&a a &b{2}&a en el servidor &b{3}&a, mundo &b{4}&a."
 user-demote-endoftrack: "El final de la pista &4{0}&c fue alcanzado, asi que &4{1}&c fue removido de &4{2}&c."
 user-demote-error-malformed: >
-  {PREFIX}The previous group on the track, {0}, no longer exists. Unable to demote user.\n
-  {PREFIX}Either create the group, or remove it from the track and try again.
+  {PREFIX}El grupo anterior en el tack, {0}, no existe. No se puede degradar al usuario.\n
+  {PREFIX}Puede crear el grupo o eliminarlo del track e intentarlo de nuevo.
 user-showpos: >
-  &aShowing &b{0}&a's position on track &b{1}&a.\n
+  &aMostrando posicion de &b{0} &aen el track &b{1}&a.\n
   {2}
 group-info-general: >
-  {PREFIX}&b&l> &bGroup Info: &f{0}\n
-  {PREFIX}&f- &3Display Name: &f{1}\n
-  {PREFIX}&f- &3Weight: &f{2}\n
-  {PREFIX}&f- &aCounts:\n
-  {PREFIX}&f-    &3Permissions: &a{3}\n
-  {PREFIX}&f-    &3Temporary Permissions: &a{4}\n
-  {PREFIX}&f-    &3Prefixes: &a{5}\n
-  {PREFIX}&f-    &3Suffixes: &a{6}\n
+  {PREFIX}&b&l> &bInfo de Grupo: &f{0}\n
+  {PREFIX}&f- &3Nombre: &f{1}\n
+  {PREFIX}&f- &3Peso: &f{2}\n
+  {PREFIX}&f- &aCuentas:\n
+  {PREFIX}&f-    &3Permisos: &a{3}\n
+  {PREFIX}&f-    &3Permisos Temporales: &a{4}\n
+  {PREFIX}&f-    &3Prefijos: &a{5}\n
+  {PREFIX}&f-    &3Sufijos: &a{6}\n
   {PREFIX}&f-    &3Meta: &a{7}
-group-set-weight: "&aEstablesca el peso a &b{0}&a para el grupo &b{1}&a."
+group-set-weight: "&aEstablezca el peso a &b{0}&a para el grupo &b{1}&a."
 track-info: >
-  {PREFIX}&b&l> &bShowing Track: &f{0}\n
-  {PREFIX}&f- &7Path: &f{1}
+  {PREFIX}&b&l> &bMostrando Track: &f{0}\n
+  {PREFIX}&f- &7Ruta: &f{1}
 track-clear: "&b{0}&a's pista de grupos fue borrada."
 track-append-success: "&aGrupo &b{0}&a fue añadido con éxito a la pista &b{1}&a."
 track-insert-success: "&aGrupo &b{0}&a fue insertado con éxito en la pista &b{1}&a en la posicion &b{2}&a."
@@ -329,10 +330,10 @@ import-end-complete: "&b(Import) &a&lCOMPLETADO &7- tomo &b{0} &7segundos - &7No
 import-end-complete-err: "&b(Import) &a&lCOMPLETADO &7- tomo &b{0} &7segundos - &c{1} errores."
 import-end-complete-err-sin: "&b(Import) &a&lCOMPLETADO &7- tomo &b{0} &7segundos - &c{1} errores."
 import-end-error-header: >
-  {PREFIX}&b(Import) &7------------> &fShowing Error #&b{0} &7<------------\n
-  {PREFIX}&b(Import) &fWhilst executing: &3Command #{1}\n
-  {PREFIX}&b(Import) &fCommand: &7{2}\n
-  {PREFIX}&b(Import) &fType: &3{3}\n
-  {PREFIX}&b(Import) &fOutput:
+  {PREFIX}&b(Import) &7------------> &fMostrando Error #&b{0} &7<------------\n
+  {PREFIX}&b(Import) &fMientras ejecutaba: &3Comando #{1}\n
+  {PREFIX}&b(Import) &fComando: &7{2}\n
+  {PREFIX}&b(Import) &fTipo: &3{3}\n
+  {PREFIX}&b(Import) &fSalida:
 import-end-error-content: "&b(Import) &b-> &c{0}"
 import-end-error-footer: "&b(Import) &7<------------------------------------------>"
